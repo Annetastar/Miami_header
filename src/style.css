@@ -1,0 +1,96 @@
+body {
+  margin: 0;
+  font-family: 'Ubuntu', sans-serif;
+  color: white; }
+
+.header {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 765px;
+  padding-top: 35px; }
+  .header__top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-right: 250px;
+    margin-bottom: 599px; }
+    .header__top_logo {
+      margin-right: 82px; }
+    .header__top_phone {
+      margin-right: 82px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      text-transform: uppercase; }
+    .header__top_order {
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 16px;
+      text-transform: uppercase;
+      border-bottom: 1px dashed #fff; }
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none; }
+
+.nav__item {
+  text-decoration: none;
+  margin-right: 22.5px;
+  padding: 7px 20px; }
+  .nav__item_active {
+    color: black;
+    background: #d5c5aa;
+    border-radius: 10px; }
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase; }
+  .nav__link:hover {
+    color: #d5c5aa; }
+
+@media screen and (max-width: 1200px) {
+  .header__top {
+    margin-right: 150px; }
+    .header__top_logo {
+      margin-right: 75px; }
+    .header__top_phone {
+      margin-right: 75px; } }
+@media screen and (max-width: 1050px) {
+  .header__top {
+    margin-right: 100px; }
+    .header__top_logo {
+      margin-right: 70px; }
+    .header__top_phone {
+      margin-right: 70px; } }
+@media screen and (max-width: 899px) {
+  .header__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 400px; }
+    .header__top_logo {
+      width: 165px;
+      height: 126px;
+      margin-right: 0; }
+    .header__top_phone {
+      margin-right: 0; }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; } }
+@media screen and (max-width: 499px) {
+  .header__top {
+    margin-bottom: 200px; }
+    .header__top_logo {
+      width: 265px;
+      height: 226px; } }
+@media screen and (max-width: 399px) {
+  .header__top {
+    margin-bottom: 100px; } }
+
+/*# sourceMappingURL=style.css.map */

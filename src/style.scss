@@ -1,0 +1,119 @@
+@import "_reset";
+@import "mixins";
+@import "variables";
+
+.header {
+  background-image: url("../images/bg.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 765px;
+  padding-top: 35px;
+  &__top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: baseline;
+    margin-right: 250px;
+    margin-bottom: 599px;
+    &_logo {
+      margin-right: 82px;
+    }
+    &_phone {
+      margin-right: 82px;
+      @include header-top-styles;
+    }
+    &_order {
+      @include header-top-styles;
+      border-bottom: 1px dashed #fff;
+    }
+  }
+}
+
+
+.nav__list {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+.nav__item {
+  text-decoration: none;
+  margin-right: 22.5px;
+  padding: 7px 20px;
+  &_active {
+    color: black;
+    background: $color-hover;
+    border-radius: 10px;
+  }
+}
+
+.nav__link {
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  &:hover {
+    color: $color-hover;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .header__top {
+    margin-right: 150px;
+    &_logo {
+      margin-right: 75px;
+    }
+    &_phone {
+      margin-right: 75px;
+    }
+  }
+}
+
+@media screen and (max-width: 1050px){
+  .header__top {
+    margin-right: 100px;
+    &_logo {
+      margin-right: 70px;
+    }
+    &_phone {
+      margin-right: 70px;
+    }
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .header__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 0;
+    margin-bottom: 400px;
+    &_logo {
+      width: 165px;
+      height: 126px;
+      margin-right: 0;
+    }
+    &_phone {
+      margin-right: 0;
+    }
+  }
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .header__top {
+    margin-bottom: 200px;
+    &_logo {
+      width: 265px;
+      height: 226px;
+    }
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .header__top {
+    margin-bottom: 100px;
+  }
+}
